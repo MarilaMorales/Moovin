@@ -1,0 +1,67 @@
+{
+    "moovin": [
+      { "nombre": "Moovin" }
+    ],
+    "sedes": [
+      { "nombre": "San José", "moovin": "Moovin" },
+      { "nombre": "Alajuela", "moovin": "Moovin" },
+      { "nombre": "Cartago", "moovin": "Moovin" },
+      { "nombre": "Heredia", "moovin": "Moovin" },
+      { "nombre": "Guanacaste", "moovin": "Moovin" },
+      { "nombre": "Puntarenas", "moovin": "Moovin" },
+      { "nombre": "Limón", "moovin": "Moovin" }
+    ],
+    "distribuidoras": [
+      { "nombre": "Conchal", "sede": "San José", "empleados": 10, "paquetes_entregados": 500, "incidentes": 2 },
+      { "nombre": "Tamarindo", "sede": "Alajuela", "empleados": 15, "paquetes_entregados": 600, "incidentes": 1 },
+      { "nombre": "Hermosa", "sede": "Cartago", "empleados": 12, "paquetes_entregados": 400, "incidentes": 3 },
+      { "nombre": "Manzanillo", "sede": "Heredia", "empleados": 8, "paquetes_entregados": 700, "incidentes": 2 },
+      { "nombre": "Jaco", "sede": "Guanacaste", "empleados": 10, "paquetes_entregados": 500, "incidentes": 0 },
+      { "nombre": "Carrillo", "sede": "Puntarenas", "empleados": 14, "paquetes_entregados": 300, "incidentes": 1 },
+      { "nombre": "Dominical", "sede": "Limón", "empleados": 11, "paquetes_entregados": 450, "incidentes": 4 },
+      { "nombre": " Flamingo", "sede": "San José", "empleados": 9, "paquetes_entregados": 350, "incidentes": 2 },
+      { "nombre": " Malpais", "sede": "Alajuela", "empleados": 13, "paquetes_entregados": 320, "incidentes": 0 },
+      { "nombre": " Nosara", "sede": "Cartago", "empleados": 10, "paquetes_entregados": 550, "incidentes": 1 }
+    ],
+    "puntos_venta": [
+      { "nombre": "Red", "distribuidora": "Conchal", "empleados": 5, "paquetes_entregados": 250, "incidentes": 1 },
+      { "nombre": "Blue", "distribuidora": "Tamarindo", "empleados": 6, "paquetes_entregados": 300, "incidentes": 2 },
+      { "nombre": "Green", "distribuidora": "Hermosa", "empleados": 4, "paquetes_entregados": 200, "incidentes": 0 },
+      { "nombre": "Yellow", "distribuidora": "Manzanillo", "empleados": 7, "paquetes_entregados": 350, "incidentes": 1 },
+      { "nombre": "Purple", "distribuidora": "Jaco", "empleados": 8, "paquetes_entregados": 400, "incidentes": 3 },
+      { "nombre": "Orange", "distribuidora": "Carrillo", "empleados": 5, "paquetes_entregados": 300, "incidentes": 0 },
+      { "nombre": "Pink", "distribuidora": "Dominical", "empleados": 6, "paquetes_entregados": 320, "incidentes": 2 },
+      { "nombre": "Brown", "distribuidora": " Flamingo", "empleados": 7, "paquetes_entregados": 280, "incidentes": 1 },
+      { "nombre": "Black", "distribuidora": " Malpais", "empleados": 4, "paquetes_entregados": 220, "incidentes": 0 },
+      { "nombre": "White", "distribuidora": " Nosara", "empleados": 5, "paquetes_entregados": 260, "incidentes": 1 }
+    ],
+    "administradores": [
+      { "nombre": "Leonardo DiCaprio", "puesto": "Administrador", "compañia": "San José" },
+      { "nombre": "Scarlett Johansson", "puesto": "Administrador", "compañia": "Alajuela" },
+      { "nombre": "Tom Hanks", "puesto": "Administrador", "compañia": "Cartago" },
+      { "nombre": "Jennifer Lawrence", "puesto": "Administrador", "compañia": "Heredia" },
+      { "nombre": "Brad Pitt", "puesto": "Administrador", "compañia": "Guanacaste" },
+      { "nombre": "Emma Stone", "puesto": "Administrador", "compañia": "Puntarenas" },
+      { "nombre": "Robert Downey Jr.", "puesto": "Administrador", "compañia": "Limón" }
+    ],
+    "nodes": [
+      { "id": "1", "nombre": "Moovin", "type": "Moovin" },
+      { "id": "2", "nombre": "San José", "parent": "1", "type": "Sede" },
+      { "id": "3", "nombre": "Alajuela", "parent": "1", "type": "Sede" },
+      { "id": "4", "nombre": "Cartago", "parent": "1", "type": "Sede" },
+      { "id": "5", "nombre": "Conchal", "parent": "2", "type": "Distribuidora" },
+      { "id": "6", "nombre": "Tamarindo", "parent": "3", "type": "Distribuidora" },
+      { "id": "7", "nombre": "Hermosa", "parent": "4", "type": "Distribuidora" },
+      { "id": "8", "nombre": "Manzanillo", "parent": "2", "type": "Distribuidora" },
+      { "id": "9", "nombre": "Jaco", "parent": "3", "type": "Distribuidora" },
+      { "id": "10", "nombre": "Carrillo", "parent": "4", "type": "Distribuidora" },
+      { "id": "11", "nombre": "Dominical", "parent": "2", "type": "Distribuidora" },
+      { "id": "12", "nombre": "Red", "parent": "5", "type": "Punto de Venta" },
+      { "id": "13", "nombre": "Blue", "parent": "6", "type": "Punto de Venta" },
+      { "id": "14", "nombre": "Green", "parent": "7", "type": "Punto de Venta" },
+      { "id": "15", "nombre": "Yellow", "parent": "8", "type": "Punto de Venta" },
+      { "id": "16", "nombre": "Purple", "parent": "9", "type": "Punto de Venta" },
+      { "id": "17", "nombre": "Orange", "parent": "10", "type": "Punto de Venta" },
+      { "id": "18", "nombre": "Pink", "parent": "11", "type": "Punto de Venta" }
+    ]
+}

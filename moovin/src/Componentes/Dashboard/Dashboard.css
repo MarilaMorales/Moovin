@@ -1,0 +1,23 @@
+/* Dashboard.css */
+.DashboardContainer {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important; /* Dos columnas */
+    grid-template-rows: repeat(2, auto) !important; /* Dos filas */
+    gap: 20px;
+    padding: 20px;
+    background: #043048;
+  }
+  
+  .ChartContainer {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ChartContainer h3 {
+    color: #ac2c2c; /* Color de los títulos */
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
