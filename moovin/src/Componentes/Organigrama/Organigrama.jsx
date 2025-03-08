@@ -10,15 +10,15 @@ const OrganigramaMoovin = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const nodesData = await getNodes();  // Obtienes los nodos desde tu API o db.json
+                const nodesData = await getNodes();  
 
                 // Formatear los nodos para adaptarlos al formato que OrgChart espera
                 const formattedNodes = nodesData.map(item => ({
                     id: item.id,
-                    pid: item.parent || null,  // Usar 'parent' para la relación jerárquica
-                    name: item.nombre,         // Usar 'nombre' como nombre del nodo
-                    title: item.type,          // Usar 'type' para difereciar los tipos de nodos
-                    img: item.img || '',       //Dejar la imagen de útimo
+                    pid: item.parent || null,  
+                    name: item.nombre,         
+                    title: item.type,          
+                    img: item.img || '',       
                 }));
 
                 setNodes(formattedNodes);
